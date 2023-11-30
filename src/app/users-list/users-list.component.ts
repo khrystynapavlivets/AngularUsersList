@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component,ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-users-list',
   templateUrl: './users-list.component.html',
-  styleUrls: ['./users-list.component.scss']
+  styleUrls: ['./users-list.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class UsersListComponent {
   public textHeader: string = 'Angular users tasks';
